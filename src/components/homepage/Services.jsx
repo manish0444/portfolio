@@ -27,14 +27,13 @@ export default function Services() {
       <div className="space-y-14">
         <ServiceUi
           title="my expertises."
-          description="I focus on all things design and web related. With each of my
-          services, my goal is to deliver an impactful and elevating
-          digital experience for everyone."
+          description="I am dedicated to all aspects of design and web development.
+           Through each of my services, my aim is to deliver a meaningful and uplifting digital experience for all users."
           items={expertiseItems}
         />
         <ServiceUi
           title="my digital tool box."
-          description="These are my go to tech stack to make any projects happen. I am always eager of learning more about my current stack, and new technologies that could expand my horizons."
+          description="I rely on a robust tech stack to bring projects to life, constantly seeking to enhance my expertise in my current tools while eagerly exploring new technologies to broaden my capabilities."
           items={toolBoxItems}
         />
       </div>

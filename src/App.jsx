@@ -8,7 +8,7 @@ import Hero from "./components/homepage/Hero";
 import Role from "./components/homepage/Role";
 import About from "./components/homepage/About";
 import Services from "./components/homepage/Services";
-import Works from "./components/homepage/Works";
+// import Works from "./components/homepage/Works";
 import Contact from "./components/homepage/Contact";
 import Footer from "./components/ui/Footer";
 
@@ -56,7 +56,7 @@ const App = () => {
         {/* forwardedRef props to pass into the child component to access the ref, then this will go into the useRef array  */}
         <About />
         <Services />
-        <Works forwardedRef={(el) => (sectionRefs.current[1] = el)} />
+        {/* <Works forwardedRef={(el) => (sectionRefs.current[1] = el)} /> */}
         <Contact />
       </main>
       <Footer />
