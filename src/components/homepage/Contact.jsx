@@ -54,30 +54,41 @@ export default function Contact() {
     if (response.ok) {
       showAlert("Message sent successfully!", "success");
     } else {
-      showAlert("Failed to send message. Please try again later or send directly on my email: manishbhandari0444@gmail.com", "error");
+      showAlert(
+        "Failed to send message. Please try again later or send directly on my email: manishbhandari0444@gmail.com",
+        "error"
+      );
     }
   };
-  
+
   function showAlert(message, type) {
     let alertContent = message;
-    if (type === 'error') {
-      alertContent += ` <a href="mailto:manishbhandari0444@gmail.com" style="cursor: pointer;">Send email</a>`;
+    if (type === "error") {
+      alertContent += ` <a href="mailto:manishbhandari0444@gmail.com" style="cursor: pointer; cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: black;
+      font-size:20px;
+      position: relative;">Send mail</a>`;
     }
-  
+
     const alertStyle = {
-      position: 'fixed',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      padding: '20px',
-      backgroundColor: type === 'success' ? '#2ecc71' : '#e74c3c',
-      color: '#fff',
-      borderRadius: '10px',
-      boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
-      zIndex: '9999',
-      textAlign: 'center',
+      position: "fixed",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      padding: "20px",
+      backgroundColor: type === "success" ? "#2ecc71" : "#e74c3c",
+      color: "#fff",
+      borderRadius: "10px",
+      boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+      zIndex: "9999",
+      textAlign: "center",
     };
-  
+
     const alertElement = document.createElement("div");
     alertElement.innerHTML = alertContent;
     Object.assign(alertElement.style, alertStyle);
@@ -86,8 +97,6 @@ export default function Contact() {
       alertElement.remove();
     }, 5000); // Remove the alert after 5 seconds
   }
-  
-  
 
   return (
     <section
